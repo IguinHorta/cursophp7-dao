@@ -24,4 +24,14 @@ require_once "config.php";
 // $usuario->login("RosinerHorta", "mimita10");
 // echo $usuario;
 
+// Criando um novo usuário
+// $aluno = new Usuario("Lua", "4y3oi");
+// $aluno->insert();
+// echo $aluno;
+
+$usuario = new Usuario();
+$usuario->loadById(4);
+$usuario->update("Sol", "89¨&@#");
+echo $usuario;
+
 ?>
