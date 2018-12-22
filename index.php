@@ -29,9 +29,16 @@ require_once "config.php";
 // $aluno->insert();
 // echo $aluno;
 
-$usuario = new Usuario();
-$usuario->loadById(4);
-$usuario->update("Sol", "89¨&@#");
-echo $usuario;
+// Atualizando um usuario
+// $usuario = new Usuario();
+// $usuario->loadById(4);
+// $usuario->update("Sol", "89¨&@#");
+// echo $usuario;
+
+// Deltar o usuario
+$delUsuario = new Usuario();
+$delUsuario->loadById(6);
+$delUsuario->delete();
+echo $delUsuario;
 
 ?>
